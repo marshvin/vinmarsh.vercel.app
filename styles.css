@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+  }
+  
+  
+.wrapper {
+  	background-color: white;
+	height: 210vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+	
+  }
+  .work{
+	background: rgb(8, 7, 7);
+	height: 250vh;
+	overflow-x: hidden;
+	overflow-y: auto;
+  }
+.imgprog{
+	margin: auto;
+}
+.h1a{
+	color: 000;
+	text-align: center;
+	background-color: goldenrod;
+  }
+  .h1b{
+	margin: auto;
+	text-align: center;
+	font-size: 3vmin;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+.h1c{
+    text-align: center;
+	color: goldenrod;
+	margin-top:25px ;
+}
+.product-price-btn2 button {	
+	display: inline-block;
+	height: 50px;
+	width: 176px;
+	margin: 0 40px 0 16px;
+	box-sizing: border-box;
+	border: transparent;
+	border-radius: 60px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	color: #ffffff;
+	background-color: #000000;
+	cursor: pointer;
+	outline: none;
+  }
+  
+  .product-price-btn2 button:hover {
+	background-color: #ffffff;
+	color: #000000;
+  }
+.card1{
+	max-width: 400px;
+	max-height: 500px;
+}
+.card2{
+	max-width: 400px;
+	max-height: 500px;
+}
+  .get-in-touch {
+	max-width: 800px;
+	margin: 50px auto;
+	position: relative;
+  
+  }
+  .get-in-touch .title {
+
+	text-align: center;
+	letter-spacing: 3px;
+	font-size: 5vmin;
+
+	padding: 40px;
+	color:goldenrod;
+	  background:white;
+	  background: -moz-linear-gradient(left,#e2dbda  0%,#0e0e11 100%) !important;
+	  background: -webkit-linear-gradient(left,#f8f4f4  0%,#19191b 100%) !important;
+	  background: linear-gradient(to right,#f0e9e9  0%,#18171a  100%) !important;
+	  
+  }
+  
+  .contact-form .form-field {
+	position: relative;
+	margin: 32px 0;
+  }
+  .contact-form .input-text {
+	display: block;
+	width: 100%;
+	height: 56px;
+	border-width: 0 0 2px 0;
+	border-color:blue;
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 400;
+  }
+  .contact-form .input-text:focus {
+	outline: none;
+  }
+  .contact-form .input-text:focus + .label,
+  .contact-form .input-text.not-empty + .label {
+	-webkit-transform: translateY(-24px);
+			transform: translateY(-24px);
+  }
+  .contact-form .label {
+	position: absolute;
+	left: 20px;
+	bottom: 11px;
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 400;
+	color: #060607;
+	cursor: text;
+	transition: -webkit-transform .2s ease-in-out;
+	transition: transform .2s ease-in-out;
+	transition: transform .2s ease-in-out, 
+	-webkit-transform .2s ease-in-out;
+  }
+  .contact-form .submit-btn {
+	display: inline-block;
+	background-color: #000;
+	 background-image: linear-gradient(125deg,#a72879,#064497);
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 16px;
+	padding: 8px 16px;
+	border: none;
+	width:200px;
+	cursor: pointer;
+  }
+  @media (max-width: 1048px){
+	.wrapper{
+		height:200vh;
+		background-color: white;
+
+	}
+	.work{
+		height: 350vh;
+	}
+	.imgprog{
+		width: 210px;
+		height: 210px;
+	}
+	.h1b{
+		float: none !important;
+		font: size 11px !important;
+	}
+	.img3{
+		align-items: center;
+		width: 100px;
+	  }
+
+	.aboutme{
+		float: none;
+		font-size: 15px;
+	}
+	.get-in-touch{
+		max-width: 300px;
+		margin: 20px auto;
+	}
+	
+  }
+  
