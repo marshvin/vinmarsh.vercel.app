@@ -18,12 +18,12 @@
     <h1 class="h1c"> Get in touch</h1>
     <section class="get-in-touch">
         <h1 class="title">Send a message</h1>
-        <form class="contact-form row" name="frmContact" action="about.php" method="post">
+        <form class="contact-form row" name="frmContact" action="insert.php" method="post">
            <div class="form-field col-lg-6">
               <input id="txtName" name="txtName" class="input-text js-input" type="text" required>
               <label class="label" for="Name">Name</label>
            </div>
-           <div class="form-field col-lg-6 ">
+           <div class="form-field col-lg-6 "> 
               <input id="txtEmail" name="txtEmail" class="input-text js-input" type="text" required>
               <label class="label" for="Email">E-mail</label>
            </div>

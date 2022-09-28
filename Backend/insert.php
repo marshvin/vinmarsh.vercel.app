@@ -1,9 +1,18 @@
 <?php
  /*$con = mysqli_connect("localhost","your_localhost_database_user","
  your_localhost_database_password","your_localhost_database_db");*/
- 
-    $con = mysqli_connect('localhost', 'root', '','db_contact');
+// servername => localhost
+        // username => root
+        // password => empty
+        // database name => db_contact
+        $conn = mysqli_connect("localhost", "root", "", "db_contact");
 
+  // Check connection
+  if($conn === false){
+    die("ERROR: Could not connect. "
+        . mysqli_connect_error());
+}
+ 
     $txtName = $_POST['txtName'];
     $txtEmail = $_POST['txtEmail'];
     $txtPhone = $_POST['txtPhone'];
@@ -12,15 +21,6 @@
 // database insert SQL code
     $sql = "INSERT INTO `tbl_contact` (`Id`, `fldName`, `fldEmail`, `fldPhone`, `fldMessage`) 
     VALUES ('0', '$txtName', '$txtEmail', '$txtPhone', '$txtMessage');"
-
-// insert in database   
-    $rs = mysqli_query($con, $sql);
-
-    /*checking if the code was succesful*/
-if($rs)
-    {
-        echo "Contact Records Inserted";
-    }
-    
+     
 
 ?> 
