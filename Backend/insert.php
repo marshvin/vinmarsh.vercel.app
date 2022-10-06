@@ -13,14 +13,28 @@
         . mysqli_connect_error());
 }
  
-    $txtName = $_POST['txtName'];
-    $txtEmail = $_POST['txtEmail'];
-    $txtPhone = $_POST['txtPhone'];
-    $txtMessage = $_POST['txtMessage'];
+$txtName =  $_REQUEST['txtName'];
+$txtEmail = $_REQUEST['txtEmail'];
+$txtPhone =  $_REQUEST['txtPhone'];
+$txtMessage = $_REQUEST['txtMessage'];
+ 
 
 // database insert SQL code
-    $sql = "INSERT INTO `tbl_contact` (`Id`, `fldName`, `fldEmail`, `fldPhone`, `fldMessage`) 
-    VALUES ('0', '$txtName', '$txtEmail', '$txtPhone', '$txtMessage');"
-     
+    $sql = "INSERT INTO `tbl_contact` 
+    VALUES ('$txtName', '$txtEmail', '$txtPhone', '$txtMessage')";
+
+
+if(mysqli_query($conn, $sql)){
+    echo "<h3>data stored in a database successfully."
+        . " Please browse your localhost php my admin"
+        . " to view the updated data</h3>";
+
+} else{
+    echo "ERROR: Hush! Sorry $sql. "
+        . mysqli_error($conn);
+}
+ 
+// Close connection
+mysqli_close($conn);
 
 ?> 
