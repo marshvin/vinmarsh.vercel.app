@@ -8,14 +8,14 @@
   
 .wrapper {
   	background-color: white;
-	height: 210vh;
+	height: 150vh;
 	overflow-x: hidden;
 	overflow-y: auto;
 	
   }
   .work{
-	background: rgb(8, 7, 7);
-	height: 250vh;
+	background: rgb(131, 125, 125);
+	height: 100vh;
 	overflow-x: hidden;
 	overflow-y: auto;
   }
@@ -25,7 +25,7 @@
 .h1a{
 	color: 000;
 	text-align: center;
-	background-color: goldenrod;
+	
   }
   .h1b{
 	margin: auto;
@@ -35,8 +35,9 @@
   }
 .h1c{
     text-align: center;
-	color: goldenrod;
+	color: black;
 	margin-top:25px ;
+	
 }
 .product-price-btn2 button {	
 	display: inline-block;
@@ -61,11 +62,21 @@
 	background-color: #ffffff;
 	color: #000000;
   }
+  .card-deck {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+  }
+  
 .card1{
 	max-width: 400px;
 	max-height: 500px;
 }
 .card2{
+	max-width: 400px;
+	max-height: 500px;
+}
+.card3{
 	max-width: 400px;
 	max-height: 500px;
 }
@@ -139,14 +150,57 @@
 	width:200px;
 	cursor: pointer;
   }
-  @media (max-width: 1048px){
+  .card-container {
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
+  .card {
+	width: 30%;
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-icon {
+	font-size: 60px;
+	margin-bottom: 20px;
+  }
+  
+  .card-content h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+  }
+  
+  .list-group-flush .list-group-item {
+	border: none;
+	padding: 0;
+  }
+  
+  .list-group-flush .list-group-item p {
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+  }
+  
+  .list-group-flush .list-group-item i {
+	margin-right: 10px;
+  }
+  
+
+  @media (max-width: 767px){
 	.wrapper{
 		height:200vh;
 		background-color: white;
 
 	}
+	.list-group-flush .list-group-item p {
+		font-size: 14px;
+	  }
 	.work{
-		height: 350vh;
+		height: 400vh;
 	}
 	.imgprog{
 		width: 210px;
@@ -169,6 +223,9 @@
 		max-width: 300px;
 		margin: 20px auto;
 	}
+	.card {
+		width: 100%;
+	  }
 	
   }
   
