@@ -228,6 +228,9 @@
 	.card {
 		width: 100%;
 	  }
+	.card-deck{
+		padding: 20px;
+	}
 	
   }
   
