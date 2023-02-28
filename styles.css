@@ -192,7 +192,7 @@
 
   @media (max-width: 767px){
 	.wrapper{
-		height:200vh;
+		height:100vh;
 		background-color: white;
 
 	}
@@ -200,7 +200,7 @@
 		font-size: 14px;
 	  }
 	.work{
-		height: 400vh;
+		height: 200vh;
 	}
 	.imgprog{
 		width: 210px;
