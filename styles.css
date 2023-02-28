@@ -14,8 +14,8 @@
 	
   }
   .work{
-	background: rgb(131, 125, 125);
-	height: 100vh;
+	background: black;
+	height: 120vh;
 	overflow-x: hidden;
 	overflow-y: auto;
   }
@@ -35,7 +35,7 @@
   }
 .h1c{
     text-align: center;
-	color: black;
+	
 	margin-top:25px ;
 	
 }
@@ -66,11 +66,13 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	padding: 30px;
   }
   
 .card1{
 	max-width: 400px;
 	max-height: 500px;
+	
 }
 .card2{
 	max-width: 400px;
