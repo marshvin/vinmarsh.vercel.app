@@ -1,5 +1,5 @@
 const introText = document.getElementById('intro-text');
-const words = ['Introducing Vincent Marsh', 'A skilled Software Engineer'];
+const words = ['Introducing Sandie', 'My stubborn Girlfriend',];
 
 let currentWordIndex = 0;
 
