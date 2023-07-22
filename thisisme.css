@@ -11,6 +11,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     height: calc(120vh - 80px);
+    overflow: hidden;
     
 }
 .js{
